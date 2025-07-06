@@ -1,0 +1,39 @@
+///                                                           ///
+/// AbilityLuaSpellLibrary spells for Making Items            ///
+///                                                           ///
+/// Last Update: 7.37e                                        ///
+///                                                           ///
+
+"DOTAAbilities"
+{
+    //=================================================================================================================
+    // Make Items: Iron Branch
+    //=================================================================================================================
+    "make_iron_branch"
+    {
+        // General
+        //-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                             "ability_lua"
+        "ScriptFile"                            "abilities/make_iron_branch"
+        "AbilityTextureName"                    "meepo_earthbind"
+        "AbilityBehavior"                       "DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+        "AbilitySound"                          "Hero_Meepo.Earthbind.Cast"
+
+        // Casting
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityCastAnimation"			"ACT_DOTA_ATTACK"
+		"AnimationPlaybackRate"			"1"
+		"AnimationIgnoresModelScale"	"1"
+
+        // Cost
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityGoldCost"                       "10"
+
+        // Special
+        //-------------------------------------------------------------------------------------------------------------
+        "AbilityValues"
+        {
+            "cooldown"                          "5 4 3 1"
+        }
+    }
+}
